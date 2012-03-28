@@ -1,0 +1,6 @@
+= AsciiDoc filter for websequencediagrams
+
+The wsd AsciiDoc filter implements the API to the
+http://websquencediagrams.com/[websequencediagrams.com] web service.
+
+This service enables you to convert specific instructions into diagram images.

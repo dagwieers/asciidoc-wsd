@@ -1,0 +1,61 @@
+= AsciiDoc websequencediagrams.com filter
+:data-uri:
+
+== Example 1: API demo
+
+.API demo example
+["wsd","napkin","png",width="10cm",height="10cm",align="center"]
+----
+alice->bob: authentication request
+bob-->alice: response
+----
+
+
+== Example 2: API demo
+
+.Online demo example
+["wsd","napkin","png",width="10cm",height="10cm",align="center"]
+----
+title Authentication Sequence
+
+Alice->Bob: Authentication Request
+note right of Bob: Bob thinks about it
+Bob->Alice: Authentication Response
+loop text
+    A->B: text
+end
+----
+
+
+== Example 3: API demo
+
+.Online demo example
+["wsd","napkin","png",width="10cm",height="10cm",align="center"]
+----
+title Authentication Sequence
+
+Alice->Bob: Authentication Request
+note right of Bob: Bob thinks about it
+Bob->Alice: Authentication Response
+loop text
+    A->B: text
+end
+state over A: Initial state
+note over A,B: text1
+note left of A: text2
+note right of A
+    multiline
+    text
+end note
+state over A: Initial state
+parallel {
+    A->B: signal 1
+    B->C: signal2
+}
+note over A,B: text1
+note left of A: text2
+note right of A
+    multiline
+    text
+end note
+----
